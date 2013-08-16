@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- There's no ng-app, since we bootstrap programmatically when RequireJS is done loading -->
 <html>
 <head>
   <title>Webshop with AngularJS + RequireJS</title>
@@ -8,5 +9,7 @@
   <h1>Welcome to the shop!</h1>
   <hr>
   <div data-ng-view></div>
-  </body>
+  <hr>
+  <div data-ng-include="'login.html'"></div>
+</body>
 </html>

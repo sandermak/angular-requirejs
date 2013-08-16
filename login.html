@@ -1,0 +1,9 @@
+<div data-ng-controller="LoggedInController">
+  <div data-ng-if="loggedInUser">
+    Welcome back <span data-ng-bind="loggedInUser"></span>
+  </div>
+  <div data-ng-if="!loggedInUser">
+    <input data-ng-model="username"></input><input type="submit" data-ng-click="login(username)" value="Login"></input>
+  </div>
+
+</div>
