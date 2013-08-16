@@ -2,14 +2,18 @@
 <!-- There's no ng-app, since we bootstrap programmatically when RequireJS is done loading -->
 <html>
 <head>
-  <title>Webshop with AngularJS + RequireJS</title>
+  <title>Modular dummy webshop with AngularJS + RequireJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
   <script type="text/javascript" src="js/vendor/requirejs/require.js" data-main="js/main"></script>
 </head>
 <body>
-  <h1>Welcome to the shop!</h1>
-  <hr>
-  <div data-ng-view></div>
-  <hr>
-  <div data-ng-include="'login.html'"></div>
+  <div class="container">
+    <h2>Modular Widget Webshop</h2>
+    <hr>
+    <div data-ng-view></div>
+    <hr>
+    <div data-ng-include="'login.html'"></div>
+  </div>
 </body>
 </html>

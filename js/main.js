@@ -3,7 +3,7 @@
 require
     .config({
         paths: {
-            'angular': 'https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min',
+            'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min',
             'domReady': './vendor/requirejs/require-domready'
         },
 
