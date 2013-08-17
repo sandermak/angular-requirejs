@@ -1,5 +1,8 @@
 <div>We present you these marvelous products:</div>
 <br>
+<input type="text" class="form-control" placeholder="Search" data-ng-model="itemsearch"></input>
+<br>
 <ul>
-  <li data-ng-repeat="item in items"><div data-ng-bind="item.name"></div></li>
+  <li data-ng-repeat="item in items | filter:{name: itemsearch}"><div data-ng-bind="item.name"></div></li>
 </ul>
+<a href="/cart">Cart, please<a>

@@ -1,0 +1,9 @@
+<div>Your cart contains:</div>
+<br>
+<ul data-ng-if="cartItems.length != 0">
+  <li data-ng-repeat="item in items"><div data-ng-bind="item.name"></div></li>
+</ul>
+<p data-ng-if="cartItems.length == 0">
+  <em>Your cart is empty</em>
+</p>
+<a href="/catalog">Shop, please<a>

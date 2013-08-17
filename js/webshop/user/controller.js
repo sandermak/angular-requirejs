@@ -1,5 +1,5 @@
-define(['angular', 'webshop/common/userservice'], function(ng) {
-  return ng.module('webshop.common.controller.ng', ['webshop.common.userservice.ng'])
+define(['angular', 'webshop/user/service'], function(ng) {
+  return ng.module('webshop.user.controller.ng', ['webshop.user.service.ng'])
     .controller('LoggedInController', ['$scope', 'userService',
       function($scope, userService) {
 

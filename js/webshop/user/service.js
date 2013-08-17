@@ -1,5 +1,5 @@
 define(['angular'], function(ng) {
-  return ng.module('webshop.common.userservice.ng', []).service('userService',
+  return ng.module('webshop.user.service.ng', []).service('userService',
     function() {
       var userService = {}
       var loggedInUser = null;
